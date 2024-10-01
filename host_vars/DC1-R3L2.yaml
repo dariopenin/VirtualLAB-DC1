@@ -1,6 +1,6 @@
 is_border_leaf: true
 lacp_pcs: []
-loopback3_ip: 1.1.1.2/32
+loopback3_ip: 1.11.1.2/32
 mclag_member_pcs: []
 sonic_bgp:
   - bestpath:

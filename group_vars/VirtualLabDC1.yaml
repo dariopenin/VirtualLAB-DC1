@@ -14,7 +14,7 @@ host_data:
     mclag_peer_ip: 10.1.2.2
     mgmt_gateway_ip: 192.168.1.1
     mgmt_ip: 192.168.1.210/24
-    vtep_name: vtep1
+    vtep_name: vtep_DC1R1
   DC1-R1L2:
     bgp_asn: 65101
     bgp_router_id: 10.1.2.2
@@ -23,7 +23,7 @@ host_data:
     mclag_peer_ip: 10.1.2.1
     mgmt_gateway_ip: 192.168.1.1
     mgmt_ip: 192.168.1.211/24
-    vtep_name: vtep1
+    vtep_name: vtep_DC1R1
   DC1-R2L1:
     bgp_asn: 65102
     bgp_router_id: 10.1.2.3
@@ -32,7 +32,7 @@ host_data:
     mclag_peer_ip: 10.1.2.4
     mgmt_gateway_ip: 192.168.1.1
     mgmt_ip: 192.168.1.212/24
-    vtep_name: vtep3
+    vtep_name: vtep_DC1R2
   DC1-R2L2:
     bgp_asn: 65102
     bgp_router_id: 10.1.2.4
@@ -41,27 +41,27 @@ host_data:
     mclag_peer_ip: 10.1.2.3
     mgmt_gateway_ip: 192.168.1.1
     mgmt_ip: 192.168.1.213/24
-    vtep_name: vtep3
+    vtep_name: vtep_DC1R2
   DC1-R3L1:
     bgp_asn: 65103
     bgp_router_id: 10.1.2.5
     loopback0_ip: 10.1.2.5/32
     loopback1_ip: 1.1.1.3/32
-    loopback3_ip: 1.1.1.1/32
+    loopback3_ip: 1.11.1.1/32
     mclag_peer_ip: 10.1.2.6
     mgmt_gateway_ip: 192.168.1.1
     mgmt_ip: 192.168.1.214/24
-    vtep_name: vtep5
+    vtep_name: vtep_DC1R3
   DC1-R3L2:
     bgp_asn: 65103
     bgp_router_id: 10.1.2.6
     loopback0_ip: 10.1.2.6/32
     loopback1_ip: 1.1.1.3/32
-    loopback3_ip: 1.1.1.2/32
+    loopback3_ip: 1.11.1.2/32
     mclag_peer_ip: 10.1.2.5
     mgmt_gateway_ip: 192.168.1.1
     mgmt_ip: 192.168.1.215/24
-    vtep_name: vtep5
+    vtep_name: vtep_DC1R3
   DC1-S1:
     bgp_asn: 65100
     bgp_router_id: 10.1.1.1
