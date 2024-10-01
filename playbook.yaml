@@ -5,16 +5,16 @@
     - dellemc.enterprise_sonic
 
   tasks: 
-#    - name: Push Configurations For Custom CLIs. pre
-#      vars:
-#        ansible_connection: network_cli
-#      sonic_config:
-#        src: fdc_clis_pre.j2
-#      register: result
-  
-    - name: Push Configurations For Custom CLIs
+    - name: Push Configurations For Custom CLIs. pre
       vars:
         ansible_connection: network_cli
       sonic_config:
-        src: fdc_clis.j2
+        src: fdc_clis_pre.j2
       register: result
+  
+#    - name: Push Configurations For Custom CLIs
+#      vars:
+#        ansible_connection: network_cli
+#      sonic_config:
+#        src: fdc_clis.j2
+#      register: result
