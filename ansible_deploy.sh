@@ -1,1 +1,1 @@
-ansible-playbook -i hosts  playbook.yaml -vvvv
+ansible-playbook -i hosts  playbook.yaml --check -vvv
