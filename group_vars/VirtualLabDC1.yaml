@@ -52,7 +52,6 @@ host_data:
     mgmt_gateway_ip: 192.168.1.1
     mgmt_ip: 192.168.1.214/24
     vtep_name: vtep_DC1R3
-    eth1/5_ip: 10.10.1.1/30
   DC1-R3L2:
     bgp_asn: 65103
     bgp_router_id: 10.1.2.6
@@ -63,7 +62,6 @@ host_data:
     mgmt_gateway_ip: 192.168.1.1
     mgmt_ip: 192.168.1.215/24
     vtep_name: vtep_DC1R3
-    eth1/5_ip: 10.10.1.5/30
   DC1-S1:
     bgp_asn: 65100
     bgp_router_id: 10.1.1.1
