@@ -170,6 +170,8 @@ sonic_bgp_neighbors:
         peer_group: spine-leaf
       - neighbor: Eth1/7
         peer_group: spine-leaf
+      - neighbor: Eth1/5
+        peer_group: external
     peer_group:
       - '{{sonic_bgp_spineleaf_peergroup}}'
       - '{{sonic_bgp_external_pg_entry}}'
@@ -183,6 +185,9 @@ sonic_bgp_neighbors_af:
 sonic_config:
   lines: []
 sonic_interfaces:
+  - description: '"WAN"'
+    enabled: true
+    name: Eth1/5  
   - description: '"Uplink to DC1-S1"'
     enabled: true
     name: Eth1/6
@@ -222,6 +227,10 @@ sonic_l2_interfaces:
         - vlan: 61
         - vlan: 62
 sonic_l3_interfaces:
+  - ipv4:
+      addresses:
+        - address: '{{ eth1/5 }}'
+    name: Eth1/5
   - ipv6:
       enabled: true
     name: Eth1/6
