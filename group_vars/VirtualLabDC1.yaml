@@ -100,6 +100,7 @@ sonic_bgp_external_pg_entry:
         - activate: true
           afi: l2vpn
           safi: evpn
+          fabric_external: true
 sonic_bgp_fabriclink_neighbors_aflist:
   - activate: true
     afi: ipv4
