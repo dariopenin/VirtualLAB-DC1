@@ -111,7 +111,7 @@ sonic_l3_interfaces:
       enabled: true
   - name: Eth1/7
     ipv6:
-     enabled: true
+      enabled: true
   - name: '{{ loopback_inf0 }}'
     ipv4:
       addresses:
